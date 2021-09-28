@@ -1,0 +1,32 @@
+.weatherCardStyle{
+  margin: 0 auto; 
+  max-width: 1160px; 
+  padding: 0 25px; 
+}
+
+.weatherCardTitle {
+  font-size: 36px; 
+  text-align: center; 
+}
+
+.weatherCardTemp {
+  display: flex; 
+  font-size: 24px; 
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.weatherCardTempRight {
+  display: flex; 
+  flex-direction: column; 
+}
+
+.weatherCardTempLeft { 
+  text-align: vertical; 
+}
+
+.weatherCardStatuses {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
