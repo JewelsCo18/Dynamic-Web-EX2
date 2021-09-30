@@ -56,15 +56,14 @@ function Home() {
     return ( 
 
         <main>
-            <header>
-                <p>
-                    <a href="/?city=paris">Paris</a>
-                </p>
-                <p>
-                    <a href="/?city=tokyo">Tokyo</a>
-                </p>
-            </header>
             <header className="weatherHeader"> Weather App </header>
+            <header className="weatherCities">
+                <p> <a href="/?city=tokyo">Tokyo</a> </p>
+                <p> <a href="/?city=greece">Greece</a> </p>
+                <p> <a href="/?city=belfast">Belfast</a> </p>
+                <p> <a href="/?city=manila">Manila</a> </p>
+            </header>
+            
             <section> 
                 <WeatherCard
                 city={city}
