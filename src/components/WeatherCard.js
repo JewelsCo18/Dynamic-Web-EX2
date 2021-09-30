@@ -1,22 +1,21 @@
 import React from 'react'; 
 
-function WeatherCard({ cloudiness, currentTemp, highTemp, humidity, lowTemp, weatherType, windSpeed }) {
+function WeatherCard({ city, cloudiness, currentTemp, feelsLike, highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed }) {
     return (
         <section className="weatherCardStyle">
-            <p className="weatherCardTitle">
-                Weather Type: <strong> {weatherType} </strong>
+            <p className="weatherCardHeader">
+                <strong className="weatherCardTitle"> {city} </strong>
+                <strong className="weatherCardDescription"> {weatherDescription} </strong>
             </p>
             <div className="weatherCardTemp">
                 <p className="weatherCardTempLeft">
-                    Current Temperature: <strong> {currentTemp} </strong>
+                    <strong className="weatherCardCurrentTemp"> {currentTemp}° </strong>
+                    <strong className="weatherCardWeatherType">  {weatherType} </strong>
                 </p>
                 <div className="weatherCardTempRight">
-                    <p>
-                        Low Temp: <strong> {lowTemp} </strong>
-                    </p>
-                    <p>
-                        High Temp: <strong> {highTemp} </strong>
-                    </p>
+                    <p> High: <strong> {highTemp}° </strong> </p>
+                    <p> Low: <strong> {lowTemp}° </strong> </p>
+                    <p> Feels Like: <strong> {feelsLike}° </strong> </p>
                 </div>
             </div>
             

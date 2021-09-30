@@ -1,32 +1,72 @@
-.weatherCardStyle{
+.weatherHeader {
+  font-size: 40px; 
+  font-family: "Optima"; 
+  font-weight: bold; 
   margin: 0 auto; 
   max-width: 1160px; 
   padding: 0 25px; 
 }
 
+.weatherCardStyle{
+  border: solid;
+  border-radius: 25px; 
+  font-family: "Optima";  
+  margin: 0 auto; 
+  max-width: 1160px; 
+  padding: 0 25px; 
+}
+
+.weatherCardHeader {
+  display: flex; 
+  flex-direction: column; 
+  text-align: center; 
+  margin-top: 15px; 
+  margin-bottom: 0;
+}
+
 .weatherCardTitle {
   font-size: 36px; 
-  text-align: center; 
+}
+
+.weatherCardDescription {
+  font-size: 24px; 
 }
 
 .weatherCardTemp {
   display: flex; 
-  font-size: 24px; 
   flex-direction: row;
   justify-content: space-around;
+  margin: 0; 
 }
 
 .weatherCardTempRight {
   display: flex; 
   flex-direction: column; 
+  font-size: 16px; 
+  margin-top: 25px; 
+}
+
+.weatherCardTempRight p {
+  margin: 12px; 
 }
 
 .weatherCardTempLeft { 
-  text-align: vertical; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.weatherCardCurrentTemp {
+  font-size: 90px; 
+}
+
+.weatherCardWeatherType {
+  font-size: 24px; 
+  text-align: center;
 }
 
 .weatherCardStatuses {
   display: flex; 
   flex-direction: row; 
-  justify-content: space-between;
+  font-size: 20px; 
+  justify-content: space-around;
 }
