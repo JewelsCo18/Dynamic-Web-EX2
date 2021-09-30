@@ -16,7 +16,7 @@ function Home() {
     const [city, setCity] = useState(); 
     const [weatherData, setWeatherData] = useState(); 
     let query = useQuery();
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
     
     useEffect(() => {
         const cityValue = query.get('city'); 
@@ -40,7 +40,6 @@ function Home() {
     
     const { cloudiness, currentTemp, feelsLike,  highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed } = useMemo(() => {
         if (!weatherData) return {}; //if weatherData is non existent we return an empty object
-        console.log(weatherData); 
         return {
             cloudiness: weatherData.clouds.all,
             currentTemp: weatherData.main.temp,
