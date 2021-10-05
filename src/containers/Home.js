@@ -40,6 +40,7 @@ function Home() {
     
     const { cloudiness, currentTemp, feelsLike,  highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed } = useMemo(() => {
         if (!weatherData) return {}; //if weatherData is non existent we return an empty object
+        console.log(weatherData); 
         return {
             cloudiness: weatherData.clouds.all,
             currentTemp: weatherData.main.temp,
@@ -58,10 +59,10 @@ function Home() {
         <main>
             <header className="weatherHeader"> Weather App </header>
             <header className="weatherCities">
-                <p> <a href="/?city=tokyo">Tokyo</a> </p>
-                <p> <a href="/?city=greece">Greece</a> </p>
-                <p> <a href="/?city=belfast">Belfast</a> </p>
-                <p> <a href="/?city=manila">Manila</a> </p>
+                <p> <a href="/?city=Tokyo">Tokyo</a> </p>
+                <p> <a href="/?city=Greece">Greece</a> </p>
+                <p> <a href="/?city=Belfast">Belfast</a> </p>
+                <p> <a href="/?city=Manila">Manila</a> </p>
             </header>
             
             <section> 

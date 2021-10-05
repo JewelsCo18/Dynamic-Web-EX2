@@ -1,3 +1,9 @@
+main {
+  background-image: radial-gradient(farthest-corner at 70% 15%, #2b235a, #8fe0ff, #75b4e3, #31255a);
+  height: 100vh; 
+  color: #2b235a; 
+}
+
 .weatherHeader {
   font-size: 40px; 
   font-family: "Optima"; 
@@ -10,13 +16,38 @@
 .weatherCities {
   display: flex; 
   flex-direction: row; 
-  justify-content: space-around;
+  margin: 0 auto; 
+  max-width: 1160px; 
+  padding: 0 25px; 
+}
+
+.weatherCities p{
+  background-color: #75b4e3;
+  border-color: #2b235a; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-style: solid; 
+  height: 30px; 
+  margin-bottom: 0px; 
+  margin-right: 5px; 
+  text-align: center; 
+  padding-top: 15px; 
+  width: 100px; 
+}
+
+.weatherCities p:hover {
+  background-color: #2b235a; 
+  cursor: pointer; 
+  color: white; 
 }
 
 .weatherCardStyle{
+  background: #75b4e3; 
+  border-color: #54416d;
   border: solid;
   border-radius: 25px; 
-  font-family: "Optima";  
+  font-family: "Optima"; 
+  height: 60vh;  
   margin: 0 auto; 
   max-width: 1160px; 
   padding: 0 25px; 
@@ -35,7 +66,9 @@
 }
 
 .weatherCardDescription {
-  font-size: 24px; 
+  font-size: 16px; 
+  text-align: center;
+  font-weight: normal; 
 }
 
 .weatherCardTemp {
@@ -53,7 +86,7 @@
 }
 
 .weatherCardTempRight p {
-  margin: 12px; 
+  margin: 5px; 
 }
 
 .weatherCardTempLeft { 
@@ -62,12 +95,11 @@
 }
 
 .weatherCardCurrentTemp {
-  font-size: 90px; 
+  font-size: 55px; 
 }
 
 .weatherCardWeatherType {
-  font-size: 24px; 
-  text-align: center;
+  font-size: 100px; 
 }
 
 .weatherCardStatuses {
@@ -76,3 +108,4 @@
   font-size: 20px; 
   justify-content: space-around;
 }
+

@@ -1,16 +1,19 @@
 import React from 'react'; 
+import WeatherImage from './WeatherImage'; 
 
 function WeatherCard({ city, cloudiness, currentTemp, feelsLike, highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed }) {
     return (
         <section className="weatherCardStyle">
             <p className="weatherCardHeader">
+                <strong className="weatherCardWeatherType"> 
+                    <WeatherImage weatherType={weatherType}> </WeatherImage>
+                </strong>
                 <strong className="weatherCardTitle"> {city} </strong>
-                <strong className="weatherCardDescription"> {weatherDescription} </strong>
             </p>
             <div className="weatherCardTemp">
                 <p className="weatherCardTempLeft">
                     <strong className="weatherCardCurrentTemp"> {currentTemp}° </strong>
-                    <strong className="weatherCardWeatherType">  {weatherType} </strong>
+                    <strong className="weatherCardDescription">  {weatherDescription} </strong>
                 </p>
                 <div className="weatherCardTempRight">
                     <p> High: <strong> {highTemp}° </strong> </p>
