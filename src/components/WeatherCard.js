@@ -3,7 +3,7 @@ import WeatherImage from './WeatherImage';
 
 function WeatherCard({ city, cloudiness, currentTemp, feelsLike, highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed }) {
     return (
-        <section className="weatherCardStyle">
+        <section className="weatherCardStyle" style={{backgroundColor:`rgba(117,179,227, ${cloudiness / 100})`}}>
             <p className="weatherCardHeader">
                 <strong className="weatherCardWeatherType"> 
                     <WeatherImage weatherType={weatherType}> </WeatherImage>

@@ -40,8 +40,8 @@ function Home() {
     
     const { cloudiness, currentTemp, feelsLike,  highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed } = useMemo(() => {
         if (!weatherData) return {}; //if weatherData is non existent we return an empty object
-        console.log(weatherData); 
-        return {
+        else {
+            return {
             cloudiness: weatherData.clouds.all,
             currentTemp: weatherData.main.temp,
             feelsLike: weatherData.main.feels_like, 
@@ -51,6 +51,7 @@ function Home() {
             weatherDescription: weatherData.weather[0].description, 
             weatherType: weatherData.weather[0].main,
             windSpeed: weatherData.wind.speed,
+            }
         }
     }, [])
 

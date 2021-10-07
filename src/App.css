@@ -42,7 +42,6 @@ main {
 }
 
 .weatherCardStyle{
-  background: #75b4e3; 
   border-color: #54416d;
   border: solid;
   border-radius: 25px; 
@@ -107,5 +106,24 @@ main {
   flex-direction: row; 
   font-size: 20px; 
   justify-content: space-around;
+}
+
+
+@media (max-width: 600px) {
+  .weatherCardStyle {
+    height: 80vh;
+  }
+  .weatherCardTemp {
+    flex-direction: column; 
+    text-align: center; 
+  }
+  .weatherCardTemp p {
+    font-size: 16px; 
+  }
+  .weatherCardStatuses {
+    flex-direction: column;
+    font-size: 16px; 
+    text-align: center;
+  }
 }
 
