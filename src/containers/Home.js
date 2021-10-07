@@ -58,7 +58,6 @@ function Home() {
     return ( 
 
         <main>
-            <header className="weatherHeader"> Weather App </header>
             <header className="weatherCities">
                 <p> <a href="/?city=Tokyo">Tokyo</a> </p>
                 <p> <a href="/?city=Greece">Greece</a> </p>

@@ -1,16 +1,8 @@
 main {
   background-image: radial-gradient(farthest-corner at 70% 15%, #2b235a, #8fe0ff, #75b4e3, #31255a);
-  height: 100vh; 
   color: #2b235a; 
-}
-
-.weatherHeader {
-  font-size: 40px; 
-  font-family: "Optima"; 
-  font-weight: bold; 
-  margin: 0 auto; 
-  max-width: 1160px; 
-  padding: 0 25px; 
+  height: 100vh; 
+  
 }
 
 .weatherCities {
@@ -42,6 +34,7 @@ main {
 }
 
 .weatherCardStyle{
+  background-color: #75b4e3;
   border-color: #54416d;
   border: solid;
   border-radius: 25px; 
@@ -107,7 +100,6 @@ main {
   font-size: 20px; 
   justify-content: space-around;
 }
-
 
 @media (max-width: 600px) {
   .weatherCardStyle {
