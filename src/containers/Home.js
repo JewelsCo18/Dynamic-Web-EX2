@@ -39,6 +39,7 @@ function Home() {
     }, [URL, city]); 
     
     const { cloudiness, currentTemp, feelsLike,  highTemp, humidity, lowTemp, weatherDescription, weatherType, windSpeed } = useMemo(() => {
+        //error with weatherData, requires refresh of file in order to update correctly 
         if (!weatherData) return {}; //if weatherData is non existent we return an empty object
         else {
             return {
